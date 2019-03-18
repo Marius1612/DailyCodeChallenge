@@ -1,9 +1,9 @@
-package com.company;
+package hard;
 
 import static java.lang.System.in;
 import static java.lang.System.out;
 
-public class Main {
+public class Uber {
 
     public static void main(String[] args) {
       int array[]={2,3,5,6,7};
