@@ -3,15 +3,15 @@ package hard;
 import static java.lang.System.out;
 
 public class Stripe {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-        int array[]={2,3,4,3,4,123};
+        int[] array={2,3,4,3,4,123};
         out.println(solution(array));
     }
 
-    static int[] arrangeArrays(int []array)
+    private static int[] arrangeArrays(int []array)
     {
-        int arrangedArray[]=new int[array.length];
+        int []arrangedArray=new int[array.length];
         int num=0;
         for(int index=0;index<array.length;index++)
         {
@@ -24,9 +24,9 @@ public class Stripe {
         return arrangedArray;
     }
 
-    static int solution(int []array)
+   private static int solution(int []array)
     {
-       for(int index=0;index<array.length;index++)
+        for(int index=0;index<array.length;index++)
        {
            if(isOne(array[index]))
            {
@@ -36,7 +36,7 @@ public class Stripe {
        return ifIsNotOne(arrangeArrays(array));
     }
 
-    static int ifIsOne(int []array)
+    private static int ifIsOne(int []array)
     {
         int solution=0;
         for(int index=0;index<array.length;index++)
@@ -49,7 +49,7 @@ public class Stripe {
         return solution;
     }
 
-    static int ifIsNotOne(int []array)
+    private static int ifIsNotOne(int []array)
     {
         int solution=Integer.MAX_VALUE;
         for(int index=0;index<array.length;index++)
@@ -62,12 +62,12 @@ public class Stripe {
         return solution;
     }
 
-    static boolean isPositive(int n)
+    private static boolean isPositive(int n)
     {
         return n>0;
     }
 
-    static boolean isOne(int n){
+    private static boolean isOne(int n){
         return n==1;
     }
 }

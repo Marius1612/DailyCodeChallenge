@@ -1,23 +1,22 @@
 package hard;
 
-import static java.lang.System.in;
 import static java.lang.System.out;
 
 public class Uber {
 
     public static void main(String[] args) {
-      int array[]={2,3,5,6,7};
+      int[] array={2,3,5,6,7};
       displayArray(uberCuArray(array));
 
     }
 
-    static void displayArray(int array[])
+   private static void displayArray(int []array)
     {
         for(int i=0;i<array.length;i++)
             out.println(array[i]);
     }
 
-    static int []arrayEgualsWithArray(int []array, int []secondArray)
+    private static int []arrayEgualsWithArray(int []array, int []secondArray)
     {
         for(int i=0;i<array.length;i++)
         {
@@ -26,7 +25,7 @@ public class Uber {
         return secondArray;
     }
 
-    static int[] uberCuArray(int array[])
+   private static int [] uberCuArray(int[] array)
     {
         int []fakeArray=new int[array.length];
         int holder;
