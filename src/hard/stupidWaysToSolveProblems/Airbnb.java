@@ -1,4 +1,4 @@
-package hard;
+package hard.stupidWaysToSolveProblems;
 
 import static java.lang.System.out;
 

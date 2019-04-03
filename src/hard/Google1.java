@@ -6,7 +6,7 @@ public class Google1 {
         displayArray(solution(array,3));
     }
 
-    static void displayArray(int [] array)
+   private static void displayArray(int [] array)
     {
         for(int index=0;index<array.length;index++)
         {
@@ -14,7 +14,7 @@ public class Google1 {
         }
     }
 
-    static int [] solution(int [] array, int k)
+  private   static int [] solution(int [] array, int k)
     {
         int max=Integer.MIN_VALUE;
         int []arrayToReturn=new int[array.length-k+1];
