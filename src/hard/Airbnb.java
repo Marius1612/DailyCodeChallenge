@@ -4,7 +4,7 @@ import static java.lang.System.out;
 
 public class Airbnb {
     public static void main(String[] args) {
-        int[] array = {5, 1, 1, 5, 6, 1, 124};
+        int[] array = {5, 1, 1, 5, 6, 102, 124};
         out.println(sumOfNonAdjacentNumbers(array));
     }
 
